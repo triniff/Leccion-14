@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Formulario HTML</title>
-</head>
 <meta charset="UTF-8">
+<title>Formulario HTML</title>
+<style>
+body {
+	background: #EDF6FF;
+}
+h1 {
+    color: #222F40;
+    font-family: verdana;
+    font-size: 200%;
+    text-align: center;
+}
+p  {
+    color: #6690D9;
+    font-family: verdana;
+    font-size: 100%;
+    text-align: center;
+    padding: 5px;
+}
+</style>
+</head>
 <script src="assets/js/javascript.js" language="javascript" type="text/javascript"></script>
 <body>
 	<h1>Formulario de Datos</h1>
 	<form action="">
 		<p>
 		<label>Nombre</label><br>
-		<input type="text" name="name" required="">
+		<input type="text" name="firstname" required="">
 		</p>
 		<p>
 		<label>Apellido</label><br>
 		<input type="text" name="lastname" required="">
 		</p>
+		<p>
 		<label>Teléfono</label><br>
-		<input type="tel" name="telefono" pattern="[0-9]{9}" required="">
+		<input type="text" name="telefono" pattern="[0-9]{9}" title="9 números"required="">
 		</p>
 		<p>
 		<label>Escoge tu carro para continuar</label> <br>
-			 <select name="auto" id="auto" required="">
+			 <select name="auto" id="auto" required="" style="margin-top: 1%">
 			 <option selected hidden>Escoge tu carro</option>
 			  <option value="volvo">Volvo</option>
 			  <option value="saab">Saab</option>
@@ -29,7 +48,7 @@
 			  <option value="audi">Audi</option>
 			</select>
 		</p>
-		<p>
+		<p style="margin-top: 5%">
 		<label>Email</label><br>
 		<input type="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required="">
 		</p>
@@ -38,7 +57,7 @@
 		<input type="password" name="pw" pattern=".{6,}" title="6 o más caracteres" required="">
 		</p>
 		<p>
-			<input type="submit" name="" value="send">
+			<input type="submit" name="" value="send" style="width: 100px; height: 25px; background: #6690D9; color: #EDF6FF; border: none; font-family: verdana;">
 		</p>
 	</form>
 </body>
