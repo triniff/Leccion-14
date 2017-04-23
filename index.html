@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario HTML</title>
+</head>
+<meta charset="UTF-8">
+<script src="assets/js/javascript.js" language="javascript" type="text/javascript"></script>
+<body>
+	<h1>Formulario de Datos</h1>
+	<form action="">
+		<p>
+		<label>Nombre</label><br>
+		<input type="text" name="name" required="">
+		</p>
+		<p>
+		<label>Apellido</label><br>
+		<input type="text" name="lastname" required="">
+		</p>
+		<label>Teléfono</label><br>
+		<input type="tel" name="telefono" pattern="[0-9]{9}" required="">
+		</p>
+		<p>
+		<label>Escoge tu carro para continuar</label> <br>
+			 <select name="auto" id="auto" required="">
+			 <option selected hidden>Escoge tu carro</option>
+			  <option value="volvo">Volvo</option>
+			  <option value="saab">Saab</option>
+			  <option value="mercedes">Mercedes</option>
+			  <option value="audi">Audi</option>
+			</select>
+		</p>
+		<p>
+		<label>Email</label><br>
+		<input type="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required="">
+		</p>
+		<p>
+		<label>Crea tu contraseña</label><br>
+		<input type="password" name="pw" pattern=".{6,}" title="6 o más caracteres" required="">
+		</p>
+		<p>
+			<input type="submit" name="" value="send">
+		</p>
+	</form>
+</body>
+
+</html>
